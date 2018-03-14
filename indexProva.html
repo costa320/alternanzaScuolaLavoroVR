@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="stylesheet" href="css/pannellum.css"/>
+    <script type="text/javascript" src="js/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 900px;
+        height: 900px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {   
+    "default": {
+        "firstScene": "EntrataPrincipaleFuoriDallaScuola",
+        "author": "Constantin Iacovlev",
+        "sceneFadeDuration": 1000,
+        "autoLoad":true,
+        "orientationOnByDefault":true,
+        "autoRotate":0,
+        "compass":true,
+    },
+
+    "scenes": {
+        
+        "EntrataPrincipaleFuoriDallaScuola": {
+            "title": "Liceo Classico Statale Ennio Quirino Visconti di Roma",
+            "hfov": 300,//zoom
+            "pitch": 23,//giro asse y
+            "yaw": 46,//giro asse x
+            "type": "equirectangular",
+            "panorama": "/img/fronteScuola.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 10,
+                    "yaw": 80,
+                    "type": "scene",
+                    "text": "Entrata principale scuola visconti",
+                    "sceneId": "EntrataPrincipaleDaDentro"
+                }
+            ]
+        },
+
+        "EntrataPrincipaleDaDentro": {
+            "title": "Entrata da dentro",
+            "hfov": 300,
+            "yaw": 180,
+            "pitch": 20,//giro asse y
+            "type": "equirectangular",
+            "panorama": "/img/entrataPrincipaleDaDentro.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Mason Circle",
+                    "sceneId": "EntrataPrincipaleFuoriDallaScuola",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        }
+    }
+});
+</script>
+
+</body>
+</html>

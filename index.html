@@ -1,75 +1,637 @@
 <!DOCTYPE HTML>
+<!--
+	Asymmetry by gettemplates.co
+	Twitter: http://twitter.com/gettemplateco
+	URL: http://gettemplates.co
+-->
 <html>
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour</title>
-    <link rel="stylesheet" href="pannellum.css"/>
-    <script type="text/javascript" src="pannellum.js"></script>
-    <style>
-    #panorama {
-        width: 900px;
-        height: 900px;
-    }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Liceo classico statale &mdash; Ennio Quirino Visconti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+    <meta name="author" content="gettemplates.co" />
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> -->
+
+
+    <!--    pannellum    -->
+    <link rel="stylesheet" href="css/pannellum.css" />
+    <script type="text/javascript" src="js/pannellum.js"></script>
+    <script type="text/javascript" src="js/GestioneTourGuidato.js"></script>
+    <!--        end-->
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Themify Icons-->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+
 </head>
+
 <body>
 
-<div id="panorama"></div>
-<script>
-pannellum.viewer('panorama', {   
-    "default": {
-        "firstScene": "EntrataPrincipaleFuoriDallaScuola",
-        "author": "Constantin Iacovlev",
-        "sceneFadeDuration": 1000,
-        "autoLoad":true,
-        "orientationOnByDefault":true,
-        "autoRotate":0,
-        "compass":true,
-    },
+    <div class="gtco-loader"></div>
 
-    "scenes": {
-        
-        "EntrataPrincipaleFuoriDallaScuola": {
-            "title": "Liceo Classico Statale Ennio Quirino Visconti di Roma",
-            "hfov": 300,//zoom
-            "pitch": 23,//giro asse y
-            "yaw": 46,//giro asse x
-            "type": "equirectangular",
-            "panorama": "/img/fronteScuola.jpg",
-            "hotSpots": [
-                {
-                    "pitch": 10,
-                    "yaw": 80,
-                    "type": "scene",
-                    "text": "Entrata principale scuola visconti",
-                    "sceneId": "EntrataPrincipaleDaDentro"
-                }
-            ]
-        },
+    <div id="page">
+        <nav class="gtco-nav" role="navigation">
+            <div class="gtco-container">
+                <div class="row">
+                    <div class=" col-sm-7 col-xs-12 ">
+                        <div id="gtco-logo"><a href="index.html">Liceo Classico Statale Ennio Quirinio Visconti <em>.</em></a></div>
+                    </div>
+                    <div class="col-xs-10 text-right menu-1 main-nav" style="width: fit-content;">
+                        <ul>
+                            <li class="active"><a href="#" data-nav-section="home">Home</a></li>
+                            <li><a href="#" data-nav-section="tour">Tour</a></li>
+                            <li><a href="#" data-nav-section="portfolio">Portfolio</a></li>
+                            <!--						<li><a href="#" data-nav-section="blog">Blog</a></li>-->
+                            <!--
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+						<li><a href="http://gettemplates.co/" class="external">External</a></li>
+-->
+                        </ul>
+                    </div>
+                </div>
 
-        "EntrataPrincipaleDaDentro": {
-            "title": "Entrata da dentro",
-            "hfov": 300,
-            "yaw": 180,
-            "pitch": 20,//giro asse y
-            "type": "equirectangular",
-            "panorama": "/img/entrataPrincipaleDaDentro.jpg",
-            "hotSpots": [
-                {
-                    "pitch": -10,
-                    "yaw": 180,
-                    "type": "scene",
-                    "text": "Mason Circle",
-                    "sceneId": "EntrataPrincipaleFuoriDallaScuola",
-                    "targetYaw": -23,
-                    "targetPitch": 2
-                }
-            ]
-        }
-    }
-});
-</script>
+            </div>
+        </nav>
+
+        <div id="gtco-hero" class="js-fullheight" data-section="home">
+            <div class="flexslider js-fullheight">
+                <ul class="slides">
+                    <li style="background-image: url(images/img_bg_1.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+                                <div class="slider-text-inner">
+                                    <h2>Vivi la nuova esperienza</h2>
+                                    <!--		   					<p><a href="http://twitter.com/gettempaltesco" target="_blank" class="btn btn-primary btn-lg">Follow @gettemplatesco</a></p>-->
+                                    <!--                            <p><a href="#" class="btn btn-primary btn-lg">Inizia qui la tua nuova esperienza sensoriale</a></p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url(images/img_bg_2.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+                                <div class="slider-text-inner">
+                                    <h2>Creatività. Innovazione. Intuizione.</h2>
+                                    <!--                                    <p role="navigation"><a href="#"  data-nav-section="tour" class="btn btn-primary btn-lg">Inizia qui</a></p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url(images/img_bg_3.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+                                <div class="slider-text-inner">
+                                    <h2>Una nuova esperienza.</h2>
+                                    <!--		   					<p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>-->
+                                    <!--                                    <p><a href="#" class="btn btn-primary btn-lg">Inizia qui il tuo viaggio.</a></p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="gtco-section-overflow">
+
+            <div class="gtco-section" id="gtco-services" data-section="tour" style="padding-bottom: 1em;">
+                <div class="gtco-container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="gtco-heading">
+                                <h2 class="gtco-left">Tour 3D</h2>
+                                <p>Vuoi visitare la nostra scuola ma non hai tempo? Nessun problema, qui potrai fare un tour della nostra scuola.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+
+
+
+
+
+
+
+                                <div id="panoramaContainer" class="col-md-12" style="height: 600px;padding:0px;">
+                                    <script>
+                                        CreazioneTourGuidato();
+                                    </script>
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gtco-section" id="gtco-portfolio" data-section="portfolio">
+                        <div class="gtco-container">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                                    <h2>Portfolio</h2>
+                                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="img/SAM_100_0094.jpg" class="gtco-card-item image-popup" title="Project name here.">
+                                        <figure>
+                                            <div class="overlay"><i class="ti-plus"></i></div>
+                                            <img src="img/SAM_100_0094.jpg" alt="Image" class="img-responsive">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="img/SAM_100_0037.jpg" class="gtco-card-item image-popup" title="Project name here.">
+                                        <figure>
+                                            <div class="overlay"><i class="ti-plus"></i></div>
+                                            <img src="img/SAM_100_0037.jpg" alt="Image" class="img-responsive">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="img/SAM_100_0036.jpg" class="gtco-card-item image-popup" title="Project name here.">
+                                        <figure>
+                                            <div class="overlay"><i class="ti-plus"></i></div>
+                                            <img src="img/SAM_100_0036.jpg" alt="Image" class="img-responsive">
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <a href="images/img_4.jpg" class="gtco-card-item image-popup" title="Project name here.">
+                                        <figure>
+                                            <div class="overlay"><i class="ti-plus"></i></div>
+                                            <img src="images/img_4.jpg" alt="Image" class="img-responsive">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="images/img_5.jpg" class="gtco-card-item image-popup" title="Project name here.">
+                                        <figure>
+                                            <div class="overlay"><i class="ti-plus"></i></div>
+                                            <img src="images/img_5.jpg" alt="Image" class="img-responsive">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="images/img_6.jpg" class="gtco-card-item image-popup" title="Project name here.">
+                                        <figure>
+                                            <div class="overlay"><i class="ti-plus"></i></div>
+                                            <img src="images/img_6.jpg" alt="Image" class="img-responsive">
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <a href="images/img_2.jpg" class="gtco-card-item image-popup" title="Project name here.">
+                                        <figure>
+                                            <div class="overlay"><i class="ti-plus"></i></div>
+                                            <img src="images/img_2.jpg" alt="Image" class="img-responsive">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="images/img_1.jpg" class="gtco-card-item image-popup" title="Project name here.">
+                                        <figure>
+                                            <div class="overlay"><i class="ti-plus"></i></div>
+                                            <img src="images/img_1.jpg" alt="Image" class="img-responsive">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="images/img_3.jpg" class="gtco-card-item image-popup" title="Project name here.">
+                                        <figure>
+                                            <div class="overlay"><i class="ti-plus"></i></div>
+                                            <img src="images/img_3.jpg" alt="Image" class="img-responsive">
+                                        </figure>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gtco-section" id="gtco-faq" data-section="faq" style="padding-bottom: 1em;">
+                        <div class="gtco-container">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                                    <h2>Domande frequenti</h2>
+                                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="gtco-accordion">
+                                        <div class="gtco-accordion-heading">
+                                            <div class="icon"><i class="icon-cross"></i></div>
+                                            <h3>Chi ha fondato la scuola?</h3>
+                                        </div>
+                                        <div class="gtco-accordion-content">
+                                            <div class="inner">
+                                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gtco-accordion">
+                                        <div class="gtco-accordion-heading">
+                                            <div class="icon"><i class="icon-cross"></i></div>
+                                            <h3>Quali sono i punti forti?</h3>
+                                        </div>
+                                        <div class="gtco-accordion-content">
+                                            <div class="inner">
+                                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gtco-accordion">
+                                        <div class="gtco-accordion-heading">
+                                            <div class="icon"><i class="icon-cross"></i></div>
+                                            <h3>Cosa mi da di più?</h3>
+                                        </div>
+                                        <div class="gtco-accordion-content">
+                                            <div class="inner">
+                                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="gtco-accordion">
+                                        <div class="gtco-accordion-heading">
+                                            <div class="icon"><i class="icon-cross"></i></div>
+                                            <h3>Perche dovrei far andare i miei figli proprio qui?</h3>
+                                        </div>
+                                        <div class="gtco-accordion-content">
+                                            <div class="inner">
+                                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gtco-accordion">
+                                        <div class="gtco-accordion-heading">
+                                            <div class="icon"><i class="icon-cross"></i></div>
+                                            <h3>Scuola e arte?</h3>
+                                        </div>
+                                        <div class="gtco-accordion-content">
+                                            <div class="inner">
+                                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gtco-accordion">
+                                        <div class="gtco-accordion-heading">
+                                            <div class="icon"><i class="icon-cross"></i></div>
+                                            <h3>Storia, e cultura?</h3>
+                                        </div>
+                                        <div class="gtco-accordion-content">
+                                            <div class="inner">
+                                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--
+	<div id="gtco-blog" data-section="blog">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>Blog</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#" class="gtco-card-item has-text">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="images/img_1.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text text-left">
+							<h2>25 Minimal Web Design for Inspiration</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p class="gtco-category">Sep. 25th, 2016 by John Doe</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4">
+					<a href="#" class="gtco-card-item has-text">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="images/img_2.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text text-left">
+							<h2>25 Minimal Web Design for Inspiration</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p class="gtco-category">Sep. 25th, 2016 by John Doe</p>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix visible-sm-block"></div>
+				<div class="col-md-4">
+					<a href="#" class="gtco-card-item has-text">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="images/img_3.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text text-left">
+							<h2>25 Minimal Web Design for Inspiration</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p class="gtco-category">Sep. 25th, 2016 by John Doe</p>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix visible-lg-block visible-md-block"></div>
+
+				<div class="col-md-4">
+					<a href="#" class="gtco-card-item has-text">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="images/img_4.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text text-left">
+							<h2>25 Minimal Web Design for Inspiration</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p class="gtco-category">Sep. 25th, 2016 by John Doe</p>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4">
+					<a href="#" class="gtco-card-item has-text">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="images/img_5.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text text-left">
+							<h2>25 Minimal Web Design for Inspiration</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p class="gtco-category">Sep. 25th, 2016 by John Doe</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4">
+					<a href="#" class="gtco-card-item has-text">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="images/img_6.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text text-left">
+							<h2>25 Minimal Web Design for Inspiration</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p class="gtco-category">Sep. 25th, 2016 by John Doe</p>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix visible-lg-block visible-md-block"></div>
+				<div class="clearfix visible-sm-block"></div>
+
+			</div>
+		</div>
+	</div>
+-->
+
+                <!--
+	<div class="gtco-section-overflow">
+		<div id="gtco-counter" class="gtco-section">
+			<div class="gtco-container">
+
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+						<h2>Fun Facts</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					
+					<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+						<div class="feature-center">
+							<span class="icon">
+								<i class="ti-download"></i>
+							</span>
+							<span class="counter js-counter" data-from="0" data-to="2122070" data-speed="5000" data-refresh-interval="50">1</span>
+							<span class="counter-label">Downloads</span>
+
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+						<div class="feature-center">
+							<span class="icon">
+								<i class="ti-face-smile"></i>
+							</span>
+							<span class="counter js-counter" data-from="0" data-to="402002" data-speed="5000" data-refresh-interval="50">1</span>
+							<span class="counter-label">Happy Clients</span>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+						<div class="feature-center">
+							<span class="icon">
+								<i class="ti-briefcase"></i>
+							</span>
+							<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
+							<span class="counter-label">Projects Done</span>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+						<div class="feature-center">
+							<span class="icon">
+								<i class="ti-time"></i>
+							</span>
+							<span class="counter js-counter" data-from="0" data-to="212023" data-speed="5000" data-refresh-interval="50">1</span>
+							<span class="counter-label">Hours Spent</span>
+
+						</div>
+					</div>
+						
+				</div>
+			</div>
+		</div>
+
+		<div id="gtco-products" data-section="products">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+						<h2>Products</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="owl-carousel owl-carousel-carousel">
+						<div class="item">
+							<img src="images/img_1.jpg" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="item">
+							<img src="images/img_2.jpg" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="item">
+							<img src="images/img_3.jpg" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="item">
+							<img src="images/img_4.jpg" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+-->
+
+
+                <!--
+	<div id="gtco-subscribe">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>Subscribe</h2>
+					<p>Be the first to know about the new templates.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<form class="form-inline">
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Your Email">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="name" class="sr-only">Name</label>
+								<input type="text" class="form-control" id="name" placeholder="Your Name">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<button type="submit" class="btn btn-danger btn-block">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+-->
+
+                <!--
+	<div id="gtco-contact" data-section="contact" class="gtco-cover gtco-cover-xs" style="background-image:url(images/img_bg_2.jpg);">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row text-center">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-12">
+							<h3>If you have inqueries please email us at <a href="#">info@yourdomain.com</a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+-->
+
+
+                <footer id="gtco-footer" role="contentinfo" style="padding:1em!important;">
+                    <div class="gtco-container">
+
+                        <div class="row copyright">
+                            <div class="col-md-12">
+                                <p class="pull-left">
+                                    <small class="block">Designed by <a href="" target="_blank">Cos7a</a> Images: <a href="" target="_blank">E.Q. Visconti</a></small>
+                                </p>
+                                <!--
+					<p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+-->
+                            </div>
+                        </div>
+
+                    </div>
+                </footer>
+            </div>
+
+            <div class="gototop js-top">
+                <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+            </div>
+
+            <!-- jQuery -->
+            <script src="js/jquery.min.js"></script>
+            <!-- jQuery Easing -->
+            <script src="js/jquery.easing.1.3.js"></script>
+            <!-- Bootstrap -->
+            <script src="js/bootstrap.min.js"></script>
+            <!-- Waypoints -->
+            <script src="js/jquery.waypoints.min.js"></script>
+            <!-- Carousel -->
+            <script src="js/owl.carousel.min.js"></script>
+            <!-- countTo -->
+            <script src="js/jquery.countTo.js"></script>
+            <!-- Flexslider -->
+            <script src="js/jquery.flexslider-min.js"></script>
+            <!-- Magnific Popup -->
+            <script src="js/jquery.magnific-popup.min.js"></script>
+            <script src="js/magnific-popup-options.js"></script>
+            <!-- Main -->
+            <script src="js/main.js"></script>
 
 </body>
+
 </html>
