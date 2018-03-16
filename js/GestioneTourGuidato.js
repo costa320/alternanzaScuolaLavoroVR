@@ -1,7 +1,7 @@
 function CreazioneTourGuidato(){
                                         pannellum.viewer('panoramaContainer', {
                                             "default": {
-                                                "firstScene": "-1",
+                                                "firstScene": "EntrataPrincipaleFuoriDallaScuola",
                                                 "author": "Laura,Filippo",
                                                 "sceneFadeDuration": 1000,
                                                 "autoLoad": true,
@@ -654,3 +654,10 @@ function CreazioneTourGuidato(){
                                             }//end
                                         });
 }//end script
+
+function PortFolio(nomeFoto){
+    pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "../img/"+nomeFoto
+    });
+}
